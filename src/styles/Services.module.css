@@ -1,0 +1,45 @@
+.servicesContent{
+    display:grid;
+    grid-template-areas: 'sechead sechead servmod1 servmod1 servmod1 servmod1 servmod1 servmod1 servmod1 servmod1 servmod1'
+                         'sechead sechead servmod1 servmod1 servmod1 servmod1 servmod1 servmod1 servmod1 servmod1 servmod1'
+                         'sechead sechead servmod1 servmod1 servmod1 servmod1 servmod1 servmod1 servmod1 servmod1 servmod1'
+}
+.section_header{
+    grid-area:sechead;
+    text-align:start;
+}
+.serviceModule img{
+    border-radius:30px;
+}
+.serviceModule1{
+    display:flex;
+    text-align:start;
+    padding:30px 0;
+    justify-content:space-between;
+    grid-area:servmod1;
+}
+.serviceModule2{
+    display:flex;
+    text-align:start;
+    padding:30px 0;
+    justify-content:space-between;
+    grid-area:servmod2;
+}
+.serviceModule3{
+    display:flex;
+    text-align:start;
+    padding:30px 0;
+    justify-content:space-between;
+    grid-area:servmod3;
+}
+@media screen and (max-width:799px){
+    .serviceModule{
+       flex-direction:column;
+       justify-content:center;
+         align-items:center;
+    }
+}
+
+body{
+    
+}
