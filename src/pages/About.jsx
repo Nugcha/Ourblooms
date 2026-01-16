@@ -1,69 +1,100 @@
 import Footer from "../components/Footer";
-import styles from "../styles/About.module.css";
-import lady from "../assets/AboutPage/lady.png"
-import lady1 from "../assets/AboutPage/lady-1.png"
-import lady2 from "../assets/AboutPage/lady-2.png"  
-import flower2 from '../assets/Aboutpage/3-up image-1.png' ;
-import flower3 from '../assets/Aboutpage/3-up image-2.png' ;
-import ib from "../assets/AboutPage/Image breaker.png"
-import ib2 from "../assets/AboutPage/Image breaker-1.png"
-import ib3 from "../assets/AboutPage/Image breaker-2.png"
+import styles from '../styles/About.module.css'
+import lady from '../assets/AboutPage/lady.png'
+import lady1 from '../assets/AboutPage/lady-1.png'
+import lady2 from '../assets/AboutPage/lady-2.png'
 
-function About() {
-    return(
+import a1 from '../assets/AboutPage/Image 01.png'
+import a2 from '../assets/AboutPage/Image 01-1.png'
+import a3 from '../assets/AboutPage/Image 01-2.png'
+
+import b1 from '../assets/AboutPage/Image 02.png'
+import b2 from '../assets/AboutPage/Image 02-1.png'
+import b3 from '../assets/AboutPage/Image 02-2.png'
+
+import c1 from '../assets/AboutPage/Image 03.png'
+import c2 from '../assets/AboutPage/Image 03-1.png'
+import c3 from '../assets/AboutPage/Image 03-2.png'
+
+import ib from '../assets/AboutPage/Image breaker.png'
+import ib1 from '../assets/AboutPage/Image breaker-1.png'
+import ib2 from '../assets/AboutPage/Image breaker-2.png'
+
+function About(){
+  return(
       <>
-        <div className={styles.about_main}>
-          <p className='heading1'>ABOUT</p>
-          <div className={styles.about_container}>
-            <div className={styles.left_container}>
-              <p className="caption1">OUR STORY</p>
-            </div>
-            <div className={styles.right_container}>
-              <div className={styles.author_information}>
-                <picture>
+      <div className={styles.head}>
+      <p className="heading1">  ABOUT </p>
+      </div>
+      
+      <div className={styles.container}>
+
+      <div className={styles.story}>
+          <p className={`caption1 ${styles.cap}`}> Our story </p>
+      </div>
+
+      <div className={styles.rightColumnContainer}>
+          <div className={styles.AuthorInformation}>
+              <picture>
                   <source media="(min-width: 1200px)" srcSet={lady} />
                   <source media="(min-width: 800px)" srcSet={lady1} />
-                  <img src={lady2} />
-                </picture>
-                <div className={styles.author_details}>
-                  <p className='caption2'>LILY SMITH</p>
-                  <p className='paragraph1'>Owner</p>
-                </div>
-              </div>
-              <div className={styles.honor_container}>
-                <div className={styles.honor_container_text}>
-                  <p className="heading2">Our Blooms was founded in honor of Lily Smith’s loving aunts, Teresa and Beth.</p>
-                </div>
-                <div className={styles.honor_flowers}>
-                 
-                </div>
-              </div>
-              <div className={styles.center_text}>
-                <div className={styles.about_text_container}>
-                  <p className='paragraph2'> Lily’s journey with flowers began in the heart of Oregon, amidst the flourishing fields of her aunts' flower farm. It was there, surrounded by the abundance of nature, that she discovered her passion for floral design. From learning the names of each bloom to understanding the delicate balance of a bouquet, she absorbed the artistry of flowers like the rich Oregon soil. <br /><br/> Bloom & Co. is the expression of that lifelong passion, a place where her love for flowers translates into beautifully curated arrangements that bring joy and elegance to your spaces. </p>
-                </div>
-              </div>
-              <picture>
-                <source media="(min-width: 1200px)" srcSet={ib} />
-                <source media="(min-width: 800px)" srcSet={ib2} />
-                <img className={styles.image_breaker} src={ib3} />
+                  <img src={lady2} alt="Author" className={styles.authorImage} />
               </picture>
-              <div className={styles.center_text}>
-                <div className={styles.about_text_container2}>
-                  <p className='paragraph2'> From humble beginnings, Bloom&Co has grown into a beloved local destination, known for its artistic arrangements, personal service, and commitment to quality. <br /><br/> Discover how we can add a touch of natural beauty to your next event. </p>
-                  <button className='button_danger'>· BOOK A CONSULTATION</button>
-                </div>
+              <div className={styles.authorDetails}>
+                  <p className="caption2"> Lily smith </p>
+                  <p className="paragraph1">  Owner </p>
               </div>
-            </div>
           </div>
-        </div>
-        <Footer />
+
+
+          <div className={styles.founded}>
+          <p className="heading2"> Our Blooms was founded in honor of Lily Smith’s loving aunts, Teresa and Beth. </p>
+      </div>
+
+      <div className={styles.upImage}>
+              <picture>
+                  <source media="(min-width: 1200px)" srcSet={a1} />
+                  <source media="(min-width: 800px)" srcSet={a2} />
+                  <img src={a3} alt="Bouquette of peonies" className={styles.authorImage} />
+              </picture>
+              <picture>
+                  <source media="(min-width: 1200px)" srcSet={b1} />
+                  <source media="(min-width: 800px)" srcSet={b2} />
+                  <img src={b3} alt="Pink flower" className={styles.authorImage} />
+              </picture>
+              <picture>
+                  <source media="(min-width: 1200px)" srcSet={c1} />
+                  <source media="(min-width: 800px)" srcSet={c2} />
+                  <img src={c3} alt="White flower" className={styles.authorImage} />
+              </picture>
+          
+      </div>
+      <div className={styles.journey}>
+          <p className="paragraph2"> Lily’s journey with flowers began in the heart of Oregon, amidst the flourishing fields of her aunts' flower farm. It was there, surrounded by the abundance of nature, that she discovered her passion for floral design. From learning the names of each bloom to understanding the delicate balance of a bouquet, she absorbed the artistry of flowers like the rich Oregon soil.
+         <br/> Bloom & Co. is the expression of that lifelong passion, a place where her love for flowers translates into beautifully curated arrangements that bring joy and elegance to your spaces. </p>
+      </div>
+
+      <picture>
+          <source media="(min-width: 1200px)" srcSet={ib} />
+          <source media="(min-width: 800px)" srcSet={ib1} />
+          <img src={ib2} alt="A floral bouquet" className={styles.imageBreaker} />
+      </picture>
+      <p className="paragraph2"> From humble beginnings, Bloom&Co has grown into a beloved local destination, known for its artistic arrangements, personal service, and commitment to quality.
+                                  <br/>Discover how we can add a touch of natural beauty to your next event. </p>
+      <div className={styles.buttonSpace}>
+      <button className="button_danger"> BOOK A CONSULTATION </button>
+      </div>
+      
+      </div>
+
+      
+      
+      </div>
+
+      
+
+      <Footer />
       </>
-    );
-  }
-  
-  
-  export default About;
-  
-  
-  
+  )
+}
+export default About;
