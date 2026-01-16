@@ -1,130 +1,42 @@
-.about_main {
+.head{
     text-align: start;
 }
 
-
-
-
-.right_container {
-    width: 610px
-}
-
-
-
-
-.about_container {
+.AuthorInformation{
     display: flex;
-    gap: 200px;
+    align-items: start;
+    gap: 20px;
+    text-align: start;
 }
-
-
-
-
-.author_information {
+.rightColumnContainer{
+    grid-area:'rc';
+    text-align:start;
+}
+.upImage{
     display: flex;
-    gap: 50px;
-   
+    justify-content: space-between;
+    grid-area:'ui1';
 }
 
-
-
-
-.honor_container {
-    display: flex;
-    flex-direction: column;
-    margin: 50px 0 80px 0
+.bottomTxt{
+    grid-area:'bt1';
 }
-
-
-
-
-.honor_flowers {
-    display: flex;
-    gap: 30px
+.cap{
+    grid-area:'caption';
+    text-align: start;
 }
-
-
-
-
-.about_text_container {
-    width: 600px;
-    height: 410px;
+.more{
+    grid-area:'br1';
 }
-
-
-
-
-.image_breaker {
-    margin: 50px 0 50px 0;
+.container{
+    display: grid;
+    grid-template-areas: 'caption rc rc rc rc rc rc rc rc rc rc rc'
+                         'caption gr1 gr1 gr1 gr1 gr1 gr1 gr1 gr1 gr1 gr1 gr1'
+                         'caption ui1 ui1 ui1 ui1 ui1 ui1 ui1 ui1 ui1 ui1 ui1'
+                         'caption bt1 bt1 bt1 bt1 bt1 bt1 bt1 bt1 bt1 bt1 bt1'
+                         'caption br1 br1 br1 br1 br1 br1 br1 br1 br1 br1 br1';
+    gap:40px;
 }
-
-
-
-
-.about_text_container2 {
-    width: 600px;
-    height: 210px;
-    margin-bottom: 200px;
-}
-
-
-
-
-@media screen and (max-width: 899px) {
-    .about_container {
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-    }
-    .author_information {
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-
-
-    .about_main {
-        font-size: 1px;
-    }
-}
-
-
-
-
-@media screen and (max-width: 800px) {
-    .honor_flowers {
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-
-
-    .honor_container {
-        align-items: center;
-    }
-
-
-
-
-    .honor_container_text {
-        text-align: center;
-        width: 500px;
-    }
-
-
-
-
-    .center_text {
-        text-align: center;
-    }
-
-
-
-
-    picture {
-        display: flex;
-        justify-content: center
-    }
+.ImageBreak{
+    grid-area:'br1';
 }
