@@ -3,7 +3,6 @@ import styles from "../styles/About.module.css";
 import lady from "../assets/AboutPage/lady.png"
 import lady1 from "../assets/AboutPage/lady-1.png"
 import lady2 from "../assets/AboutPage/lady-2.png"  
-import flower1 from '../assets/Aboutpage/1234.png' ;
 import flower2 from '../assets/Aboutpage/3-up image-1.png' ;
 import flower3 from '../assets/Aboutpage/3-up image-2.png' ;
 import ib from "../assets/AboutPage/Image breaker.png"
