@@ -36,11 +36,6 @@ function About() {
                 </div>
                 <div className={styles.honor_flowers}>
                  
-                  <picture>
-                    <source media="(min-width: 1520px)" srcSet={flower2} />
-                    <source media="(min-width: 800px)" srcSet={flower2} />
-                    <img src={flower3} />
-                  </picture>
                 </div>
               </div>
               <div className={styles.center_text}>
